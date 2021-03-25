@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #F0F7FF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 1140px;
+    margin: 0 auto;
+}
+
+/* --- header --- */
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 139px;
+}
+
+.header__nav {
+   flex-grow: 1; 
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 0 30px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+.menu__link:hover {
+    color: #456C98;
+}
+
+.menu__link--active {
+    color: #000;
+}
+
+.menu__link--active:before {
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #456C98;
+    transform: translateX(-50%);
+}
+
+.header__login {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 20px;
+    background: #456C98;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.header__login:hover {
+    background: white;
+    color: #456C98;
+}
+
+/* --- /header ---- */
+
+
+/* --- main ---- */
+.main {
+    position: relative;
+}
+
+.background-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.headline {
+    position: relative;
+    margin-top: 70px;
+    font-family: Optima, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    color: #1E2D3E;
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    margin-left: 134px;
+    font-size: 24px;
+    width: 776px;
+}
+/* --- main ---- */
+
+/* --- section about the team ---- */
+.team {
+    padding-top: 60px;
+}
+
+.person__1 {
+    display: block;
+}
+
+.girl__1 {
+    margin-left: 230px;
+    margin-right: 50px;
+    float: left;
+}
+
+.name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 22px 330px 22px 50px;
+    letter-spacing: 0.05em;
+}
+
+.read__more {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 63px;
+    background: #456C98;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    
+}
+
+.read__more:hover {
+    background: white;
+    color: #456C98;
+}
+
+
+.person__2 {
+    margin: 100px 230px 90px 230px;
+}
+.girl__2 {
+    float: right;
+}
+
+.paragraph__1 {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 22px 500px 22px 0;
+    letter-spacing: 0.05em;
+}
+
+.girl__3 {
+    margin-left: 230px;
+    margin-right: 50px;
+    float: left;
+}
+
+
+/* --- /section about the team ---- */
+
+
+/* --- Contact ---- */
+.contact {
+    margin: 0 130px;
+}
+
+.contact__text {
+    font-size: 24px;
+}
+
+.contact__link {
+    margin: 0;
+    color: #456C98;
+    text-decoration: none;
+}
+
+.jobs {
+    margin: 0 130px;
+}
+.contact__link--jobs {
+    margin: 0;
+    color: #456C98;
+}
+
+/* --- /Contact ---- */
+
+/* --- footer ---- */
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+}  
+
+.footer__copyright {
+    flex-grow: 1;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 30px;
+}
+
+.footer__socials-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+
+.footer__socials {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+}
+
+.footer__socials-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0;
+}
+
+.footer__socials-item + .footer__socials-item {
+    margin-left: 17px;
+}
+
+.footer__socials-link--insta {
+    background: url(assets/icon\ insta.png);
+}
+ 
+.footer__socials-link--fb {
+    background: url(assets/icon\ fb.png);
+}
+ 
+.footer__socials-link--pt {
+    background: url(assets/icon\ pinterest.png);
+}
+
+/* --- /footer ---- */
